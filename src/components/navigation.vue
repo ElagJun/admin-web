@@ -49,8 +49,10 @@
     },
     created() {
       let user = JSON.parse(localStorage.getItem('user'));
-      //获取用户名和头像
-      this.username = user.username;
+      //获取用户名
+      if(user) {
+        this.username = user.username;
+      }
       //加载菜单
       this.loadMenus();
 
