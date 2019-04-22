@@ -21,7 +21,7 @@ axios.interceptors.response.use(
     return res;
   },
   err => {
-    if (err.response.status == 403) {
+    if (err.response.status == 401) {
       router.push('/login');
     } else {
       return Promise.reject(err);
