@@ -1,7 +1,7 @@
 # back-admin
 
 > 后台管理模板
-- [后台接口](https://github.com/raineslee/admin)
+- [后台接口](https://github.com/dean2lee/admin)
 - [演示地址](http://admindemo.inslee.cn/)
 
 ## Build Setup
