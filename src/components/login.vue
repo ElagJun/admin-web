@@ -19,6 +19,9 @@
           <img :src="codeimg" @click="getCodeimg()" class="codeimg">
         </el-col>
       </el-row>
+      <el-form-item>
+        <el-checkbox v-model="user.rememberMe">7天内记住我</el-checkbox>
+      </el-form-item>
       <el-form-item style="width:100%;">
         <el-button type="primary" style="width:100%;" @click="login('user')">登录</el-button>
       </el-form-item>
@@ -34,6 +37,7 @@
           username: '',
           password: '',
           code: '',
+          rememberMe: false
         },
         codeimg: '',
         //rules前端验证
