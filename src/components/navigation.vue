@@ -57,7 +57,7 @@
       this.loadMenus();
 
       //跳转到主页面
-      if (this.$route.path == '/navigation') {
+      if (this.$route.path == '/navigation' || this.$route.path == '/') {
         this.$router.push('/index');
       }
     },
